@@ -56,7 +56,7 @@ export default class Contact extends Component {
                     Wanna' Chat?
                     <img src={pic} alt="dumb" className="photo" />
                     <div className="contact-desc">
-                        Fill this out we'll get back to you as soon as possible.  
+                        Fill this out we'll get back to you within 48 hours.  
                     </div>
                 </div>
 

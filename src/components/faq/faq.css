@@ -31,6 +31,7 @@
 
 .faq-topic-title{
     font-weight: 800;
+    cursor: pointer;
 }
 
 .faq-topic-content{
@@ -48,7 +49,7 @@
     display: none;
 }
 
-@media(min-width:650px), (max-height:380px){
+@media(min-width:650px){
 
     .faq-photo{
         width: 400px;
@@ -59,7 +60,7 @@
     }
 }
 
-@media(min-width:750px), (max-height:1025px){
+@media(min-width:750px){
 
     .faq-photo{
         width: 700px;
@@ -82,7 +83,7 @@
     }
 }
 
-@media(min-width:1020px), (max-height:1370){
+@media(min-width:1020px){
 
     .faq-photo{
         width: 900px;

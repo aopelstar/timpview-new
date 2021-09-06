@@ -33,3 +33,7 @@ time, mark, audio, video {
 	--gray: #70667A;
 	--purple: #BE85FB;
   }
+
+  a, button{
+	  cursor: pointer;
+  }
