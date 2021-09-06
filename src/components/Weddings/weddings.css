@@ -1,0 +1,83 @@
+.wedding-wrapper{
+    width: 90vw;
+    height:auto;
+    margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        justify-content: center;
+}
+
+.wedding-banner{
+    font-size: 2.2em;
+    font-family: chapman, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.wedding-photo{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.wedding-content{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: chapman, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.wedding-content>div{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid var(--purple) 1px;
+}
+
+.chat{
+    margin-top: 20px;
+}
+
+@media(min-width:650px){
+
+    .wedding-wrapper{
+        height: auto;
+    }
+
+
+    .wedding-photo{
+        width: 400px;
+        margin: 20px 0;
+    }
+
+    .wedding-content{
+        width: 500px;
+    }
+}
+
+@media(min-width:750px){
+
+    .wedding-photo{
+        width: 700px;
+    }
+
+    .wedding-banner{
+        font-size: 2.5em;
+    }
+
+    .wedding-content{
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width:1020px){
+    .wedding-content{
+        font-size:2em;
+        width:800px;
+    }
+
+    .wedding-photo{
+        width:800px;
+    }
+}

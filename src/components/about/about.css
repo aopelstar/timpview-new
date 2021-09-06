@@ -1,0 +1,81 @@
+.about-wrapper{
+    width: 90vw;
+    height: auto;
+    margin: 0 5vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+    .about-banner{
+        font-size: 2.2em;
+        font-family: chapman, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .about-desc{
+        background-color: var(--gray);
+        color: var(--lightpurple);
+        height: auto;
+        text-align: center;
+        font-size: 1em;
+        padding: 5px 25px;
+    }
+
+    .photo-container{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .about-content{
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-family: chapman, sans-serif;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    .about-content>div{
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid var(--purple) 1px;
+    }
+
+    .about-desc2{
+        background-color: var(--gray);
+        color: var(--lightpurple);
+        height: auto;
+        text-align: center;
+        font-size: 1em;
+        padding: 5px 25px;
+    }
+
+
+    @media(min-width:750px){
+
+        .about-desc{
+            font-size: 1em;
+        }
+
+        .about-desc2{
+            font-size:4em;
+        }
+
+        .about-content{
+            font-size:1.5em;
+        }
+
+        .about-banner{
+            font-size:3.5em;
+        }
+    }
+
+    @media(min-width:1300px){
+        .about-content{
+            width:900px;
+            font-size:2em;
+        }
+    }

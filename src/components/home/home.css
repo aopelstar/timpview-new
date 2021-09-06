@@ -1,0 +1,158 @@
+.home-wrapper{
+    width: 90vw;
+    height: 250px;
+    margin: 0 5vw;
+}
+
+
+.logo{
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-desc{
+    background-color: var(--gray);
+    color: var(--lightpurple);
+    height: auto;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px 25px;
+}
+
+.photo{
+    width: 100%;
+}
+
+
+.page-break{
+    margin-top: 30px;
+}
+
+.second-photo{
+    width: 100%;
+}
+
+.home-content{
+    height: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    
+}
+
+.home-copy-top{
+
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: 800;
+    border-bottom: solid var(--purple) 3px;
+}
+
+.home-copy-top-fill{
+    margin: 20px;
+    
+}
+
+.call-to-action{
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    color: var(--gray);
+    background-color: var(--lightpurple);
+    border-color: var(--gray);
+    margin: 20px, auto;
+    border-radius: 4px;
+}
+
+.home-copy-bottom{
+    margin-top: 20px;
+    padding-bottom: 40px;
+    font-family: ainslie-sans-condensed, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+
+}
+@media(min-width:650px){
+
+    .logo{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo{
+        width: 400px;
+    }
+
+    .logo-desc{
+        width: 400px;
+        padding: 5px 0;
+    }
+}
+
+@media(min-width:750px){
+
+    .photo{
+        width:700px;
+    }
+
+    .logo-desc{
+        width: 700px;
+        font-size: 2.5em;
+    }
+
+    .home-copy-top{
+        margin-top:70px;
+        font-size: 2.5em;
+    }
+
+    .home-copy-top-fill{
+        font-size: 1.5em;
+    }
+
+    button{
+        width:300px;
+        font-size: 1.5em;
+    }
+
+}
+
+@media(min-width:1020px){
+
+    .photo{
+        width: 900px;
+    
+    }
+
+    .logo-desc{
+        width:900px;
+        font-size:3em;
+    }
+
+    .home-copy-top{
+        font-size:3.5em;
+    }
+
+    .home-copy-top-fill{
+        margin-top: 70px;
+    }
+
+    button{
+        height: auto;
+        font-size:2em;
+        width:400px;
+        padding:20px 0;
+    }
+}
