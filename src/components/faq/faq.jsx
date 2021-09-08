@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
 import './faq.css';
 import Banner from '../banner/Banner';
-import pic from '../../images/corp.jpg'
+import pic from '../../images/faq.jpeg'
 
 export default class Faq extends Component {
 

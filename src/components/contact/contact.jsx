@@ -75,7 +75,8 @@ export default class Contact extends Component {
                     </div>
                     <div className="email-wrapper">
                         <div className="email">email:</div>
-                        <div className="email-field"><input type = "text" onChange={(e)=> this.handleChange("email", e.target.value)} className={this.state.emailValid? "":"email-input"}/></div>
+                        <div className="email-field"><input type = "text" onChange={(e)=> this.handleChange("email", e.target.value)} className={this.state.emailValid? "":"email-input"}/>
+                        </div>
                     </div>
                     <div className="time-wrapper">
                         <div className="time">time:</div>

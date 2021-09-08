@@ -26,7 +26,7 @@ export default class Home extends Component {
                 </div>
                 <div className ="home-content">
                     <p className="home-copy-top">
-                    Parties are awesome. 
+                    Parties Are Awesome. 
                     </p>
                     <p className="home-copy-top-fill">
                     Parties can be pretty stressful, too.  
