@@ -43,7 +43,7 @@ export default class Contact extends Component {
                 details: this.state.details
             }
             
-            let promise = axios.post('http://localhost:5432/api/sendEmails', body)
+            let promise = axios.post('5432/api/sendEmails', body)
             promise.then(()=> {window.location.assign('/#/thanks')})
         }
     }

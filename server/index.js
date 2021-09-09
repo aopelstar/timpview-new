@@ -1,15 +1,21 @@
 const express = require('express');
 const {google} = require('googleapis');
 const OAuth2= google.auth.OAuth2;
-const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-app.use(bodyParser.json() );
-app.use(cors() );
+app.use(express.json() );
 
+app.use( express.static( `${__dirname}/../build` ) );
+
+const path = require('path')
+
+//middleware, endpoints, massive, etc...
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'))
+})
 const CLIENT_ID=process.env.CLIENT_ID;
 const CLIENT_SECRET=process.env.CLIENT_SECRET;
 const REDIRECT_URI=process.env.REDIRECT_URI;
