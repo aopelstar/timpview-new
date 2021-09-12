@@ -3,6 +3,7 @@ import './contact.css';
 import Banner from '../banner/Banner';
 import pic from '../../images/hp.jpeg';
 import axios from 'axios';
+import Foot from '../foot/foot'
 
 export default class Contact extends Component {
 
@@ -43,7 +44,7 @@ export default class Contact extends Component {
                 details: this.state.details
             }
             
-            let promise = axios.post('5432/api/sendEmails', body)
+            let promise = axios.post('/api/sendEmails', body)
             promise.then(()=> {window.location.assign('/#/thanks')})
         }
     }
@@ -95,6 +96,7 @@ export default class Contact extends Component {
                 <a href="tel:1-801-319-0708" className="contact-a"><button>call us: 801-319-0708</button></a>
                 <a href="sms://+1-801-319-0708" className="contact-a"><button>text us: 801-319-0708</button></a>
                 </div>
+                <Foot />
             </div>
         )
     }

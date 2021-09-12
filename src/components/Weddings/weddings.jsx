@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './weddings.css';
 import Banner from '../banner/Banner';
-import pic from '../../images/wed.jpg'
+import pic from '../../images/wed.jpg';
+import Foot from '../foot/foot'
 
 export default class Weddings extends Component {
     constructor(){
@@ -45,7 +46,7 @@ export default class Weddings extends Component {
                 <div className="call-to-action">
                 <a href="tel:1-801-319-0708"><button>call us: 801-319-0708</button></a>
                 </div>
-
+                <Foot />
             </div>
         )
     }

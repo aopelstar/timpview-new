@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './events.css';
 import Banner from '../banner/Banner';
 import pic from '../../images/corp.jpg'
+import Foot from '../foot/foot';
 
 export default class Events extends Component {
     constructor(){
@@ -43,7 +44,7 @@ export default class Events extends Component {
                 <div className="call-to-action">
                 <a href="tel:1-801-319-0708"><button>call us: 801-319-0708</button></a>
                 </div>
-
+                <Foot />
             </div>
         )
     }

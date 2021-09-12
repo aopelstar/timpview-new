@@ -1,7 +1,8 @@
 import React,  { Component } from 'react';
 import './faq.css';
 import Banner from '../banner/Banner';
-import pic from '../../images/faq.jpeg'
+import pic from '../../images/faq.jpeg';
+import Foot from '../foot/foot'
 
 export default class Faq extends Component {
 
@@ -75,6 +76,8 @@ export default class Faq extends Component {
                     </div>
                     
                 </div>
+
+                <Foot />
             </div>
         )
     }

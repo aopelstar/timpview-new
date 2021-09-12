@@ -37,7 +37,7 @@
     border-bottom: solid var(--purple) 1px;
 }
 
-@media(min-width:650px), (max-height:380px){
+@media(min-width:650px){
 
     .event-wrapper{
         height: auto;
@@ -54,7 +54,7 @@
     }
 }
 
-@media(min-width:750px), (max-height:1025px){
+@media(min-width:750px){
 
     .event-photo{
         width: 700px;
@@ -69,7 +69,7 @@
     }
 }
 
-@media(min-width:1020px), (max-height:1370){
+@media(min-width:1020px){
     .event-content{
         font-size:2em;
         width:800px;

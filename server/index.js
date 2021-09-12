@@ -34,7 +34,7 @@ app.post('/api/sendEmails',  async (req, res)=> {
     
     const accessToken=   await oAuth2Client.getAccessToken()
     
-    
+    console.log('accessToken');
     
         let transporter = nodemailer.createTransport({
             service:'gmail',

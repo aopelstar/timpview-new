@@ -3,6 +3,7 @@ import './about.css';
 import pic from '../../images/self.jpg';
 import pic2 from '../../images/kc.jpg';
 import Banner from '../banner/Banner';
+import Foot from '../foot/foot'
 
 export default class About extends Component {
 
@@ -58,6 +59,7 @@ export default class About extends Component {
                     </div>
 
                 </div>
+                <Foot />
             </div>
         )
     }

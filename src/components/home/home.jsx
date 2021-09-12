@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../banner/Banner'
+import Foot from '../foot/foot'
 import './home.css';
 import pic from '../../images/stock.jpg'
 
@@ -38,7 +39,7 @@ export default class Home extends Component {
                 <div className="call-to-action">
                 <a href="tel:1-801-319-0708"><button>call us: 801-319-0708</button></a>
                 </div>
-
+            < Foot/>
                 
             </div>
         )
