@@ -63,28 +63,28 @@ export default class Contact extends Component {
 
                 <div className="contact-form">
                     <div className="name-wrapper">
-                        <div className="name">name:</div>
+                        <div className="name">Name:</div>
                         <div className="name-field"><input type = "text" onChange={(e)=> this.handleChange("name", e.target.value)}/></div>
                     </div>
                     <div className="date-wrapper">
-                        <div className="date">date:</div>
+                        <div className="date">Event Date:</div>
                         <div className="date-field"><input type = "text" onChange={(e)=> this.handleChange("date", e.target.value)}/></div>
                     </div>
                     <div className="phone-wrapper">
-                        <div className="phone">phone:</div>
+                        <div className="phone">Phone:</div>
                         <div className="phone-field"><input type = "text" onChange={(e)=> this.handleChange("phone", e.target.value)}/></div>
                     </div>
                     <div className="email-wrapper">
-                        <div className="email">email:</div>
+                        <div className="email">Email:</div>
                         <div className="email-field"><input type = "text" onChange={(e)=> this.handleChange("email", e.target.value)} className={this.state.emailValid? "":"email-input"}/>
                         </div>
                     </div>
                     <div className="time-wrapper">
-                        <div className="time">time:</div>
+                        <div className="time">Time:</div>
                         <div className="time-field"><input type = "text" onChange={(e)=> this.handleChange("time", e.target.value)}/></div>
                     </div>
                     <div className="details-wrapper">
-                        <div className="details">anything else?</div>
+                        <div className="details">Anything Else?</div>
                         <div className="details-field"><input type = "text" onChange={(e)=> this.handleChange("details", e.target.value)}/></div>
                     </div>
                 </div>

@@ -55,6 +55,7 @@ app.post('/api/sendEmails',  async (req, res)=> {
             html:`<div><p> 
             This is an automated Email from your website.  <b>Are you stoked or what, buddy???</b> <br/>
             <br/>Name: ${req.body.name}<br/>
+            <br/>Email: ${req.body.email}<br/>
             <br/>Date: ${req.body.date}<br/>
             <br/>Time: ${req.body.time}<br/>
             <br/>Telephone: ${req.body.phone}<br/>
