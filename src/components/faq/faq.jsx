@@ -34,7 +34,7 @@ export default class Faq extends Component {
                 <div className="faq-content">
                     <div className="faq-topic">
                         <div className="faq-topic-title" onClick={() => this.faqTrigger("price")}> 
-                        Pricing
+                        - Pricing
                         </div>
                         <div className={this.state.price?"faq-topic-content":"faq-topic-content-hidden"}>
                             Each party is different and has different needs.  With so many different variables, the only way to receive an accurate idea of the price is by contacting us.
@@ -43,7 +43,7 @@ export default class Faq extends Component {
 
                     <div className="faq-topic">
                         <div className="faq-topic-title" onClick={() => this.faqTrigger("include")}> 
-                        What's included?
+                        - What's included?
                         </div>
                         <div className={this.state.include?"faq-topic-content":"faq-topic-content-hidden"}>
                             Timpview Events offers a breadth of different services.  We offer DJ and MC services, we are also able to provide lighting.  We pride ourselves on our flexibility and resourcefulness, if there is anything specific you'd like, don't hesitate to ask.
@@ -51,7 +51,7 @@ export default class Faq extends Component {
                     </div>
                     <div className="faq-topic">
                         <div className="faq-topic-title" onClick={() => this.faqTrigger("deposit")}> 
-                        Is there a deposit?  When is it due?
+                        - Is there a deposit?  When is it due?
                         </div>
                         <div className={this.state.deposit?"faq-topic-content":"faq-topic-content-hidden"}>
                             For corporate parties or weddings, we insist that we meet with our clients at least two weeks before the event.  The deposit of $100 will be due at that time.  After that, payment will be expected any time up to two days before the event.
@@ -59,18 +59,21 @@ export default class Faq extends Component {
                     </div>
                     <div className="faq-topic">
                         <div className="faq-topic-title" onClick={() => this.faqTrigger("vendors")}> 
-                        Do you have any preferred vendors?
+                        - Do you have any preferred vendors?
                         </div>
                         <div className={this.state.vendors?"faq-topic-content":"faq-topic-content-hidden"}>
                             So glad that you asked!  Timpview Events has a number of preferred vendors.  
                             <div>
-                                • Awesome Wedding Cakes Cheap
+                                <a href="http://www.awesomeweddingcakescheap.com" >• Awesome Wedding Cakes Cheap</a>
                             </div>
                             <div>
-                                • Clarion Gardens Catering and Events
+                            <a href ="http://www.clariongardens.com">• Clarion Gardens</a>
                             </div>
                             <div>
-                                • Maddie Bridge Photography 
+                            <a href ="http://www.maddiebridgephotography.com">• Maddie Bridge Photography </a>
+                            </div>
+                            <div>
+                            <a href ="http://www.lesleeraephotography.com">• Leslee Rae Photography </a>
                             </div>
                         </div>
                     </div>

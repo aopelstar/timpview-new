@@ -78,4 +78,8 @@
             width:900px;
             font-size:2em;
         }
+
+        .about-content>div{
+            width: 700px;
+        }
     }
