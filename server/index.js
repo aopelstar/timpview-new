@@ -53,13 +53,14 @@ app.post('/api/sendEmails',  async (req, res)=> {
             to: process.env.EMAIL,
             subject: "website email", 
             html:`<div><p> 
-            This is an automated Email from your website.  <b>Are you stoked or what, buddy???</b> <br/>
+            Hey guy, looks like we've got some stuff.  <b>Are you stoked or what?</b> <br/>
             <br/>Name: ${req.body.name}<br/>
             <br/>Email: ${req.body.email}<br/>
             <br/>Date: ${req.body.date}<br/>
             <br/>Time: ${req.body.time}<br/>
             <br/>Telephone: ${req.body.phone}<br/>
-            <br/>Message: ${req.body.details}</p></div>`
+            <br/>Message: ${req.body.details}</p></div>
+            <br/> I just want you to know you're doing a great job.  Keep going man.`
         };
 
         transporter.sendMail(mailOptions, (error, info) => {

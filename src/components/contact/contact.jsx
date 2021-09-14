@@ -16,24 +16,36 @@ export default class Contact extends Component {
             email: "",
             time: "",
             details: "",
-            emailValid: true
+            emailValid: true,
+            dateValid: true,
+            phoneValid: true
         }
     }
 
     handleChange(key, value){
-      
-        this.setState({
-            [key]: value
-        })
+       
+
+          this.setState({
+              [key]: value
+            })
+        
     }
 
     submit(){
-        if(!this.state.email.includes('@')){
+        if(!this.state.email.includes('@'&&'.')){
             this.setState({
                 emailValid: false
             })
-        }
-        else{
+        } else if (this.state.date.length<6){
+            this.setState({
+                dateValid: false
+            })
+  
+        } else if(this.state.phone.length<10){
+            this.setState({
+                phoneValid: false
+            })
+        }else{
 
             let body ={
                 name: this.state.name,
@@ -68,16 +80,29 @@ export default class Contact extends Component {
                     </div>
                     <div className="date-wrapper">
                         <div className="date">Event Date:</div>
-                        <div className="date-field"><input type = "text" onChange={(e)=> this.handleChange("date", e.target.value)}/></div>
+                        <div className="date-field"><input type = "text" onChange={(e)=> this.handleChange("date", e.target.value)} className={this.state.dateValid? "":"email-input"}/>
+                        </div>
                     </div>
+                        <div>
+
+                        <div className={this.state.dateValid?"contact-error contact-error-hidden":"contact-error"}>Please include a valid date</div>
+                        </div>
                     <div className="phone-wrapper">
                         <div className="phone">Phone:</div>
-                        <div className="phone-field"><input type = "text" onChange={(e)=> this.handleChange("phone", e.target.value)}/></div>
+                        <div className="phone-field"><input type = "text" onChange={(e)=> this.handleChange("phone", e.target.value)} className={this.state.phoneValid? "":"email-input"}/>
+                        </div>
                     </div>
+                        <div>
+
+                        <div className={this.state.phoneValid?"contact-error contact-error-hidden":"contact-error"}>Please include a valid phone</div>
+                        </div>
                     <div className="email-wrapper">
                         <div className="email">Email:</div>
                         <div className="email-field"><input type = "text" onChange={(e)=> this.handleChange("email", e.target.value)} className={this.state.emailValid? "":"email-input"}/>
                         </div>
+                    </div>
+                    <div>
+                    <div className={this.state.emailValid?"contact-error contact-error-hidden":"contact-error"}>Please include a valid email</div>
                     </div>
                     <div className="time-wrapper">
                         <div className="time">Time:</div>

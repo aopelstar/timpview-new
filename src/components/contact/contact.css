@@ -84,7 +84,20 @@ input{
 }
 
 .email-input{
-    border-bottom: solid var(--gray) 3px;
+    border-bottom: solid red 3px;
+}
+
+
+
+.contact-error{
+    font-size:.6em;
+    color: red;
+
+}
+
+.contact-error-hidden{
+    display: none;
+    visibility: none;
 }
 
 @media(min-width:650px){
