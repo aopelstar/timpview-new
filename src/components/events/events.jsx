@@ -36,7 +36,7 @@ export default class Events extends Component {
                         speakers and some serious stage presence.  The party goes all night with 
                         Timpview Events.
                         <div className="chat">
-                            Give us a call so we can help you take your event up a notch.
+                            Give us a call and we will help you take your event up a notch.
                             </div>
                     </div>
                 </div>

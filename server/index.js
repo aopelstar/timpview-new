@@ -11,7 +11,6 @@ app.use( express.static( `${__dirname}/../build` ) );
 
 const path = require('path')
 
-//middleware, endpoints, massive, etc...
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'))
@@ -60,7 +59,7 @@ app.post('/api/sendEmails',  async (req, res)=> {
             <br/>Time: ${req.body.time}<br/>
             <br/>Telephone: ${req.body.phone}<br/>
             <br/>Message: ${req.body.details}</p></div>
-            <br/> I just want you to know you're doing a great job.  Keep going man.`
+            <br/> I just want you to know you're doing a great job.  Keep going man. Hope this updates the server.`
         };
 
         transporter.sendMail(mailOptions, (error, info) => {

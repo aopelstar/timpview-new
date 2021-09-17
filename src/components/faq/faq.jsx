@@ -13,7 +13,7 @@ export default class Faq extends Component {
             include: false,
             deposit: false,
             vendors: false,
-            
+            why: false
 
         }
     }
@@ -38,7 +38,7 @@ export default class Faq extends Component {
                         {this.state.price ? "-" : "+"} Pricing
                         </div>
                         <div className={this.state.price?"faq-topic-content":"faq-topic-content-hidden"}>
-                            Each party is different and has different needs.  With so many different variables, the only way to receive an accurate idea of the price is by contacting us.
+                            Each party is different and has different needs.  From lighting to location to duration, and with so many other variables, the only way to receive an accurate idea of the price is by contacting us.
                         </div>
                     </div>
 
@@ -56,6 +56,14 @@ export default class Faq extends Component {
                         </div>
                         <div className={this.state.deposit?"faq-topic-content":"faq-topic-content-hidden"}>
                             For corporate parties or weddings, we insist that we meet with our clients at least two weeks before the event.  The deposit of $100 will be due at that time.  After that, payment will be expected any time up to two days before the event.
+                        </div>
+                    </div>
+                    <div className="faq-topic">
+                        <div className="faq-topic-title" onClick={() => this.faqTrigger("price")}> 
+                        {this.state.why ? "-" : "+"} Why should I hire a DJ?
+                        </div>
+                        <div className={this.state.why?"faq-topic-content":"faq-topic-content-hidden"}>
+                            In a world of Spotify and Ipods, we understand the temptation to make a playlist, plug into a sound system and forget about it.  But a DJ is able to do so much more than just play music.  A DJ will be able to emcee the entire event, control the flow and schedule of your night, and read the crowd in a way that a streaming service can not.  When you pay for a DJ, you're paying for a professional that will help you maximize the success of your party.
                         </div>
                     </div>
                     <div className="faq-topic">

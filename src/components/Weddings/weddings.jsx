@@ -33,8 +33,8 @@ export default class Weddings extends Component {
                     the sparkler send off.
                     </div>
                     <div>
-                    As your DJ, we are committed to meeting with you and planning out your wedding.  We take your
-                    vision and concerns into consideration and much like your wedding dress, we make sure it is a 
+                    As your DJ, we are committed to meeting with you and planning out your wedding.  Your vision and concerns
+                    are our top proriety and much like your wedding dress, we make sure it is a 
                     wedding that it tailor-made for you.
                         <div className="chat">
                             Call us and let's chat.
