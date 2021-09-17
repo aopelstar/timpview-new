@@ -34,8 +34,8 @@ export default class Weddings extends Component {
                     </div>
                     <div>
                     As your DJ, we are committed to meeting with you and planning out your wedding.  Your vision and concerns
-                    are our top proriety and much like your wedding dress, we make sure it is a 
-                    wedding that it tailor-made for you.
+                    are our top proriety for us.  Much like your wedding dress, we make sure it is a 
+                    wedding that is tailor-made for you.
                         <div className="chat">
                             Call us and let's chat.
                         </div>

@@ -59,7 +59,7 @@ export default class Faq extends Component {
                         </div>
                     </div>
                     <div className="faq-topic">
-                        <div className="faq-topic-title" onClick={() => this.faqTrigger("price")}> 
+                        <div className="faq-topic-title" onClick={() => this.faqTrigger("why")}> 
                         {this.state.why ? "-" : "+"} Why should I hire a DJ?
                         </div>
                         <div className={this.state.why?"faq-topic-content":"faq-topic-content-hidden"}>
@@ -68,7 +68,7 @@ export default class Faq extends Component {
                     </div>
                     <div className="faq-topic">
                         <div className="faq-topic-title" onClick={() => this.faqTrigger("vendors")}> 
-                        {this.state.vendors ? "-" : "+"} Do you have any preferred vendors?
+                        {this.state.vendors ? "-" : "+"} Preferred vendors
                         </div>
                         <div className={this.state.vendors?"faq-topic-content":"faq-topic-content-hidden"}>
                             So glad that you asked!  Timpview Events has a number of preferred vendors.  
