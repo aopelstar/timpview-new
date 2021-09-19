@@ -46,7 +46,11 @@ export default class Contact extends Component {
             phoneValid: this.state.phone.length >= 10
         })
 
-        if (this.state.phoneValid && this.state.dateValid && this.state.emailValid) {
+        let emailIsValid=this.state.email.includes('a' && '.');
+        let dateIsValid=this.state.date.length>=6;
+        let phoneIsValid = this.state.phone.length>=10;
+
+        if (emailIsValid && dateIsValid && phoneIsValid) {
 
             let body = {
                 name: this.state.name,
